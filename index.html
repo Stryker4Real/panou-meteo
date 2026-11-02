@@ -6,6 +6,7 @@
     <title>Panou meteo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Panou meteo</h1>
@@ -13,7 +14,18 @@
     </header>
 
     <main>
-        <h2>Vremea în București</h2>
+        <form id="formular-meteo">
+    <label for="oras">Numele orașului</label>
+    <input
+        type="text"
+        id="oras"
+        name="oras"
+        placeholder="De exemplu: București"
+        required
+    >
+    <button type="submit">Caută</button>
+</form>
+        <h2 id="titlu-vreme">Vremea în București</h2>
         <p>Temperatura: 18 °C</p>
         <p>Cer senin</p>
         <p>Date demonstrative, nu informații meteo reale.</p>
@@ -22,5 +34,7 @@
     <footer>
         <p>Proiect realizat de Dragoș și Serug.</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
